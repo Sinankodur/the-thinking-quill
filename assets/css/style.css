@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0;
+}
+#sunIcon,
+#moonIcon {
+  visibility: hidden;
+}
+.js-loaded #sunIcon,
+.js-loaded #moonIcon {
+  visibility: visible;
+}
+.logo-section {
+  cursor: default;
+  user-select: none;
+}
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+.hero-title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+  user-select: none;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.active-link::after {
+  width: 100%;
+}
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
+}
+.dark .divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+}
+.category-tag {
+  transition: all 0.2s ease;
+}
+.category-tag:hover {
+  transform: translateY(-2px);
+}
+.author-signature {
+  font-family: "Dancing Script", cursive;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #5a6c71;
+  z-index: 50;
+  transition: width 0.25s ease;
+}
+article h1,
+article h2,
+article h3 {
+  font-family: "Playfair Display", serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+article p {
+  margin-bottom: 1.25rem;
+}
+article blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #8a8a8a;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.float-slow {
+  animation: float 3s ease-in-out infinite;
+}
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}

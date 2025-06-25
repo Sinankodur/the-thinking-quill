@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sinankodur.github.io/the-thinking-quill/sitemap.xml

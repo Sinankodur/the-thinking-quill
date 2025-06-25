@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Thinking Quill | Essays in Literature, History & the World Beyond the
+      Page
+    </title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <meta
+      name="description"
+      content="The Thinking Quill is a blog offering insightful essays in literature, global affairs, history, and the unexplored corners of the human mind."
+    />
+    <meta
+      name="keywords"
+      content="literature blog, history essays, academic writing, global affairs blog, book essays"
+    />
+    <meta name="author" content="The Thinking Quill" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="The Thinking Quill | Essays in Literature & History"
+    />
+    <meta
+      property="og:description"
+      content="Explore insightful, well-researched essays on books, historical events, and global ideas."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:type" content="website" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
+  >
+    <header class="bg-primary text-white py-5 px-4 shadow-md">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center">
+          <div class="mr-4 bg-accent p-2 rounded-lg">
+            <i class="fas fa-feather-alt text-xl"></i>
+          </div>
+          <div class="logo-section">
+            <h1 class="text-3xl font-bold font-heading">The Thinking Quill</h1>
+            <p class="italic text-gray-300 text-sm mt-1">
+              Essays in Literature, History & the World Beyond the Page
+            </p>
+          </div>
+        </div>
+        <nav class="mt-4 md:mt-0 flex items-center space-x-8">
+          <a
+            href="index.html"
+            class="nav-link active-link text-gray-200 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="articles.html"
+            class="nav-link text-gray-300 hover:text-white"
+            >Articles</a
+          >
+          <a href="about.html" class="nav-link text-gray-300 hover:text-white"
+            >About</a
+          >
+          <a
+            href="subscribe.html"
+            class="nav-link text-gray-300 hover:text-white"
+            >Subscribe</a
+          >
+          <div class="flex items-center space-x-2 ml-4">
+            <label
+              for="toggleDark"
+              class="relative inline-flex items-center cursor-pointer"
+            >
+              <input type="checkbox" id="toggleDark" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-checked:bg-accent relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-transform peer-checked:after:translate-x-full"
+              ></div>
+            </label>
+            <span id="modeIcon" class="w-5 h-5 text-gray-100 dark:text-white">
+              <svg
+                id="sunIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-brightness-high-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                />
+              </svg>
+              <svg
+                id="moonIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                />
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-4 sm:px-6 flex-grow w-full">
+      <section class="relative overflow-hidden rounded-xl shadow-xl mb-16">
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        <div class="relative w-full h-[450px]">
+          <img
+            src="assets/images/main-img.avif"
+            width=""
+            height=""
+            alt="Antique books and quill"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center px-4 z-20"
+        >
+          <h2
+            class="text-4xl md:text-6xl font-bold mb-6 text-white hero-title font-heading text-center"
+          >
+            Welcome to The Thinking Quill
+          </h2>
+          <p
+            class="text-xl md:text-2xl text-gray-200 max-w-2xl text-center mb-5"
+          >
+            Where ideas unfold in literature, history, and global affairs
+          </p>
+          <a
+            href="#featured"
+            class="bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg"
+          >
+            Explore Essays
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-16" id="featured">
+        <h2
+          class="text-3xl font-bold mb-8 pb-4 border-b border-gray-200 dark:border-gray-700 font-heading"
+        >
+          Featured Essays
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article
+            class="article-card bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm"
+          >
+            <div class="mb-4">
+              <span
+                class="category-tag bg-accent/10 text-accent dark:bg-accent/20 px-3 py-1 rounded-full text-sm font-medium"
+                >Literature</span
+              >
+            </div>
+            <h3
+              class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-heading"
+            >
+              <a
+                href="posts/modernism-fragmented-voice.html"
+                class="hover:text-accent transition-colors"
+                >Modernism & the Fragmented Voice</a
+              >
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A reflection on the disruption of linearity in early 20th-century
+              literature and its echoes in contemporary narratives.
+            </p>
+            <div
+              class="flex items-center text-sm text-gray-500 dark:text-gray-400"
+            >
+              <span>June 15, 2025</span>
+              <span class="mx-2">•</span>
+              <span>12 min read</span>
+            </div>
+          </article>
+
+          <article
+            class="article-card bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm"
+          >
+            <div class="mb-4">
+              <span
+                class="category-tag bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
+                >History</span
+              >
+            </div>
+            <h3
+              class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-heading"
+            >
+              <a href="#" class="hover:text-accent transition-colors"
+                >The Silk Road: Cultural Crossroads</a
+              >
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              How ancient trade routes shaped civilizations and facilitated an
+              unprecedented exchange of ideas, goods, and beliefs.
+            </p>
+            <div
+              class="flex items-center text-sm text-gray-500 dark:text-gray-400"
+            >
+              <span>May 28, 2025</span>
+              <span class="mx-2">•</span>
+              <span>15 min read</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="mt-10 text-center">
+        <a
+          href="articles.html"
+          class="inline-block bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md"
+        >
+          View All Articles
+        </a>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
+      © 2025 Rian Mistry | The Thinking Quill
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

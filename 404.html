@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | The Thinking Quill</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      const previousTheme = sessionStorage.getItem("previous-theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      if (previousTheme === "dark" || (!previousTheme && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body
+    class="min-h-screen flex flex-col justify-center items-center text-center bg-parchment text-ink dark:bg-darkParchment dark:text-gray-200 font-body px-4"
+  >
+    <div class="mb-6 text-accent float-slow">
+      <i class="fas fa-feather-alt text-6xl"></i>
+    </div>
+
+    <div>
+      <h1 class="text-7xl font-heading font-bold mb-6">404</h1>
+      <p class="text-2xl md:text-3xl font-heading mb-4">Page Not Found</p>
+      <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-xl">
+        The page you're looking for doesn't exist. It may have been moved,
+        deleted, or perhaps it never existed at all.
+      </p>
+
+      <a
+        href="index.html"
+        class="inline-block bg-accent hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md"
+      >
+        Return Home
+      </a>
+    </div>
+
+    <footer class="mt-12 text-gray-400 text-sm">
+      © 2025 Rian Mistry | The Thinking Quill
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

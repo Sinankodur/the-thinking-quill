@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore how modernist literature uses the fragmented voice to reflect the complexities of identity, reality, and meaning in the 20th century."
+    />
+    <meta
+      name="keywords"
+      content="Modernism, Fragmented Voice, Literature, T.S. Eliot, Virginia Woolf, James Joyce, Narrative, 20th Century, Literary Analysis"
+    />
+    <title>Modernism & the Fragmented Voice</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
+  >
+    <div id="progressBar" class="progress-bar w-0"></div>
+
+    <header class="bg-primary text-white py-5 px-4 shadow-md">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center">
+          <div class="mr-4 bg-accent p-2 rounded-lg">
+            <i class="fas fa-feather-alt text-xl"></i>
+          </div>
+          <div class="logo-section">
+            <h1 class="text-3xl font-bold font-heading">The Thinking Quill</h1>
+            <p class="italic text-gray-300 text-sm mt-1">
+              Essays in Literature, History & the World Beyond the Page
+            </p>
+          </div>
+        </div>
+        <nav class="mt-4 md:mt-0 flex items-center space-x-8">
+          <a
+            href="../index.html"
+            class="nav-link text-gray-200 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="../articles.html"
+            class="nav-link text-gray-300 hover:text-white"
+            >Articles</a
+          >
+          <a
+            href="../about.html"
+            class="nav-link text-gray-300 hover:text-white"
+            >About</a
+          >
+          <a
+            href="../subscribe.html"
+            class="nav-link text-gray-300 hover:text-white"
+            >Subscribe</a
+          >
+          <div class="flex items-center space-x-2 ml-4">
+            <label
+              for="toggleDark"
+              class="relative inline-flex items-center cursor-pointer"
+            >
+              <input type="checkbox" id="toggleDark" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-checked:bg-accent relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-transform peer-checked:after:translate-x-full"
+              ></div>
+            </label>
+            <span id="modeIcon" class="w-5 h-5 text-gray-100 dark:text-white">
+              <svg
+                id="sunIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-brightness-high-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                />
+              </svg>
+              <svg
+                id="moonIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                />
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-16 px-6 flex-grow">
+      <a
+        href="../articles.html"
+        class="inline-block text-accent hover:underline mb-4"
+        >← Back to Articles</a
+      >
+
+      <article>
+        <h1 class="text-4xl font-bold font-heading mb-2">
+          Modernism & the Fragmented Voice
+        </h1>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+          By Rian Mistry • July 2025
+        </p>
+
+        <p class="text-xl">
+          Modernism emerged as a radical break from the literary and cultural
+          traditions of the 19th century, propelled by the disillusionment of
+          war and the rapid transformations in technology, psychology, and
+          society. At its core, modernist literature sought to capture the
+          fragmented experience of modern life.
+        </p>
+
+        <p class="text-xl">
+          Writers like T.S. Eliot, Virginia Woolf, and James Joyce pioneered new
+          forms of narrative—stream of consciousness, multiple perspectives,
+          nonlinear structures—to reflect the chaos and subjectivity of human
+          thought. Their work marked a rejection of the omniscient narrator and
+          a challenge to the idea of a single, stable truth.
+        </p>
+
+        <blockquote class="text-xl">
+          “These fragments I have shored against my ruins.” — T.S. Eliot
+        </blockquote>
+
+        <p class="text-xl">
+          The fragmented voice becomes not only a stylistic choice but a
+          philosophical statement: identity, reality, and meaning are no longer
+          unified, but plural and uncertain. Through literature, modernists gave
+          form to the dissonance and alienation of their time—a resonance we
+          still feel today.
+        </p>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10">Conclusion</h2>
+        <p class="text-xl">
+          Understanding the fragmented voice in modernist texts allows us to
+          appreciate the courage it took to redefine narrative and meaning. It
+          invites us to read not just for story, but for structure, silence, and
+          subtext.
+        </p>
+      </article>
+    </main>
+
+    <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
+      © 2025 Rian Mistry | The Thinking Quill
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      // Reading progress bar
+      window.onscroll = () => {
+        const doc = document.documentElement;
+        const winScroll = doc.scrollTop || document.body.scrollTop;
+        const height = doc.scrollHeight - doc.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
+  </body>
+</html>

@@ -60,9 +60,3 @@ GitHub Pages will auto-deploy from the `main` branch root.
 ## 📬 Contributing
 
 This is currently a personal blog project. If you have suggestions or feedback, feel free to open an issue or reach out.
-
----
-
-## 📝 License
-
-This project is licensed under the [MIT License](LICENSE).

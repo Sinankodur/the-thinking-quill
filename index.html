@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/the-thinking-quill/" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>
       The Thinking Quill | Essays in Literature, History & the World Beyond the
       Page
     </title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
-    <meta
-      name="google-site-verification"
-      content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
-    />
     <meta
       name="description"
       content="The Thinking Quill is a blog offering insightful essays in literature, global affairs, history, and the unexplored corners of the human mind."
@@ -21,7 +19,13 @@
       content="literature blog, history essays, academic writing, global affairs blog, book essays"
     />
     <meta name="author" content="The Thinking Quill" />
-    <!-- Open Graph Meta Tags -->
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="google-site-verification"
+      content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
+    />
+
     <meta
       property="og:title"
       content="The Thinking Quill | Essays in Literature & History"
@@ -32,17 +36,43 @@
     />
     <meta property="og:image" content="assets/images/logo.png" />
     <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sinankodur.github.io/the-thinking-quill/"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G8W4JS8FSP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-G8W4JS8FSP");
+    </script>
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
   >
@@ -63,21 +93,17 @@
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
           <a
-            href="index.html"
+            href="/"
             class="nav-link active-link text-gray-200 hover:text-white"
             >Home</a
           >
-          <a
-            href="articles.html"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/articles/" class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
-          <a href="about.html" class="nav-link text-gray-300 hover:text-white"
+          <a href="/about/" class="nav-link text-gray-300 hover:text-white"
             >About</a
           >
-          <a
-            href="subscribe.html"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -128,7 +154,7 @@
         <div class="absolute inset-0 hero-overlay z-10"></div>
         <div class="relative w-full h-[450px]">
           <img
-            src="assets/images/main-img.avif"
+            src="/assets/images/main-img.avif"
             width=""
             height=""
             alt="Antique books and quill"
@@ -149,7 +175,7 @@
             Where ideas unfold in literature, history, and global affairs
           </p>
           <a
-            href="#featured"
+            href="/#featured"
             class="bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg"
           >
             Explore Essays
@@ -177,7 +203,7 @@
               class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-heading"
             >
               <a
-                href="posts/modernism-fragmented-voice.html"
+                href="/articles/modernism-fragmented-voice/"
                 class="hover:text-accent transition-colors"
                 >Modernism & the Fragmented Voice</a
               >
@@ -189,9 +215,42 @@
             <div
               class="flex items-center text-sm text-gray-500 dark:text-gray-400"
             >
-              <span>June 15, 2025</span>
+              <span>June 20, 2025</span>
               <span class="mx-2">•</span>
-              <span>12 min read</span>
+              <span>2 min read</span>
+            </div>
+          </article>
+
+          <article
+            class="article-card bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm"
+          >
+            <div class="mb-4">
+              <span
+                class="category-tag bg-accent/10 text-accent dark:bg-accent/20 px-3 py-1 rounded-full text-sm font-medium"
+                >Literature</span
+              >
+            </div>
+            <h3
+              class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-heading"
+            >
+              <a
+                href="/articles/unbearable-silence-solitude-modernist-drama/"
+                class="hover:text-accent transition-colors"
+              >
+                The Unbearable Silence: Solitude in Modernist Drama
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A deep dive into how Ibsen, Brecht, Beckett, and Ionesco each
+              dramatize solitude as a defining feature of modern
+              existence—through realism, alienation, and absurdity.
+            </p>
+            <div
+              class="flex items-center text-sm text-gray-500 dark:text-gray-400"
+            >
+              <span>July 5, 2025</span>
+              <span class="mx-2">•</span>
+              <span>9 min read</span>
             </div>
           </article>
 
@@ -218,16 +277,16 @@
             <div
               class="flex items-center text-sm text-gray-500 dark:text-gray-400"
             >
-              <span>May 28, 2025</span>
+              <span>Coming soon</span>
               <span class="mx-2">•</span>
-              <span>15 min read</span>
+              <span>5 min read</span>
             </div>
           </article>
         </div>
       </section>
       <div class="mt-10 text-center">
         <a
-          href="articles.html"
+          href="/articles/"
           class="inline-block bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md"
         >
           View All Articles
@@ -238,6 +297,6 @@
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

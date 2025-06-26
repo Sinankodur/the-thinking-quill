@@ -3,27 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | The Thinking Quill</title>
     <meta
       name="description"
-      content="Learn about the mission behind The Thinking Quill — a literary and historical blog dedicated to insightful essays and thoughtful reflection."
+      content="Subscribe to The Thinking Quill and receive thoughtful essays in literature, history, and global culture straight to your inbox."
     />
     <meta
       name="keywords"
-      content="literature, history, essays, critical thinking, The Thinking Quill, Rian Mistry, philosophy, culture, education, blog"
+      content="subscribe, newsletter, essays, literature, history, culture, The Thinking Quill, global affairs"
     />
-    <meta name="author" content="The Thinking Quill" />
+    <meta property="og:title" content="Subscribe | The Thinking Quill" />
+    <meta
+      property="og:description"
+      content="Never miss a thought-provoking essay — subscribe to The Thinking Quill."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <title>Subscribe | The Thinking Quill</title>
     <meta
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
     />
-    <!-- Open Graph -->
-    <meta property="og:title" content="About | The Thinking Quill" />
-    <meta
-      property="og:description"
-      content="The story, mission, and voice behind The Thinking Quill literary blog."
-    />
-    <meta property="og:image" content="assets/images/logo.png" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -34,7 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
@@ -55,22 +53,20 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="index.html" class="nav-link text-gray-200 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white"
             >Home</a
           >
           <a
-            href="articles.html"
+            href="/articles/"
             class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
-          <a
-            href="about.html"
-            class="nav-link active-link text-gray-300 hover:text-white"
+          <a href="/about/" class="nav-link text-gray-300 hover:text-white"
             >About</a
           >
           <a
-            href="subscribe.html"
-            class="nav-link text-gray-300 hover:text-white"
+            href="/subscribe/"
+            class="nav-link active-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -116,43 +112,49 @@
       </div>
     </header>
 
-    <main class="max-w-4xl mx-auto py-16 px-6 flex-grow">
-      <h2 class="text-4xl font-bold font-heading mb-8 text-center">
-        About the Author
+    <main class="flex-grow max-w-3xl mx-auto py-20 px-6 text-center">
+      <h2 class="text-4xl font-heading font-bold mb-4">
+        Join Our Community of Readers
       </h2>
-      <div class="text-lg leading-relaxed space-y-6 text-justify">
-        <p>
-          <strong>Rian Mistry</strong> is a literature enthusiast, aspiring
-          educator, and critical thinker with a passion for exploring the
-          intersections between literature, history, and global socio-political
-          affairs. Through <em>The Thinking Quill</em>, Rian aims to create a
-          space where deep reading and intellectual reflection meet accessible,
-          engaging essay writing.
-        </p>
-        <p>
-          With an academic background rooted in English literature and a
-          curiosity for how texts shape and reflect cultural consciousness, Rian
-          writes with an emphasis on historical context, philosophical
-          underpinnings, and the human condition. Whether analyzing modernist
-          fiction, colonial discourse, or contemporary media, each piece is
-          crafted to ignite meaningful thought.
-        </p>
-        <p>
-          Rian is currently pursuing higher education and preparing for a career
-          in teaching and research. This blog serves not only as a creative
-          outlet but also as a platform to connect with like-minded readers who
-          value nuance, critical thinking, and literary exploration.
-        </p>
-        <p class="italic text-center text-accent text-xl pt-4">
-          “To think deeply is to read between the lines.”
-        </p>
-      </div>
+      <p class="text-lg mb-10 text-gray-700 dark:text-gray-300">
+        Join our mailing list to receive thoughtful essays on literature,
+        history, and global affairs directly in your inbox every two weeks.
+      </p>
+
+      <form
+        action="https://formspree.io/f/movwpdjo"
+        method="post"
+        class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4"
+        id="subscribeForm"
+      >
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+          class="flex-grow px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-accent"
+        />
+        <button
+          type="submit"
+          class="bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg whitespace-nowrap"
+        >
+          Subscribe
+        </button>
+      </form>
+
+      <p id="formMessage" class="text-green-600 mt-4 text-sm hidden">
+        Thank you for subscribing! 🎉
+      </p>
+
+      <p class="text-sm text-gray-500 mt-6 dark:text-gray-400">
+        You’ll only hear from us twice a month, we respect your privacy.
+        <br> No spam - Unsubscribe any time.
+      </p>
     </main>
 
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
-
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

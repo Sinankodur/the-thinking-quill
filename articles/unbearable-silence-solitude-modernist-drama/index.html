@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Unbearable Silence: Solitude in Modernist Drama | The Thinking Quill
+    </title>
+    <meta
+      name="description"
+      content="An in-depth exploration of solitude as the defining condition of modernity in the plays of Ibsen, Brecht, Beckett, and Ionesco—realism, epic theatre, and the absurd converge to reveal modern alienation."
+    />
+    <meta
+      name="keywords"
+      content="Modernist drama, solitude, Ibsen, Ibsen solness, Brecht, Beckett, Ionesco, realism, epic theatre, theatre of the absurd, modernity, literary analysis"
+    />
+    <meta
+      property="og:title"
+      content="The Unbearable Silence: Solitude in Modernist Drama"
+    />
+    <meta
+      property="og:description"
+      content="How Ibsen, Brecht, Beckett, and Ionesco render solitude as the inescapable hallmark of modern existence."
+    />
+    <meta property="og:type" content="article" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
+  >
+    <div id="progressBar" class="progress-bar w-0"></div>
+
+    <header class="bg-primary text-white py-5 px-4 shadow-md">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center">
+          <div class="mr-4 bg-accent p-2 rounded-lg">
+            <i class="fas fa-feather-alt text-xl"></i>
+          </div>
+          <div class="logo-section">
+            <h1 class="text-3xl font-bold font-heading">The Thinking Quill</h1>
+            <p class="italic text-gray-300 text-sm mt-1">
+              Essays in Literature, History & the World Beyond the Page
+            </p>
+          </div>
+        </div>
+        <nav class="mt-4 md:mt-0 flex items-center space-x-8">
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
+          <a href="/articles/" class="nav-link text-gray-300 hover:text-white"
+            >Articles</a
+          >
+          <a href="/about/" class="nav-link text-gray-300 hover:text-white"
+            >About</a
+          >
+          <a href="/subscribe/" class="nav-link text-gray-300 hover:text-white"
+            >Subscribe</a
+          >
+          <div class="flex items-center space-x-2 ml-4">
+            <label
+              for="toggleDark"
+              class="relative inline-flex items-center cursor-pointer"
+            >
+              <input type="checkbox" id="toggleDark" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-checked:bg-accent relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-transform peer-checked:after:translate-x-full"
+              ></div>
+            </label>
+            <span id="modeIcon" class="w-5 h-5 text-gray-100 dark:text-white">
+              <svg
+                id="sunIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-brightness-high-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                />
+              </svg>
+              <svg
+                id="moonIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                />
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-16 px-6 flex-grow">
+      <a href="/articles/" class="inline-block text-accent hover:underline mb-4"
+        >← Back to Articles</a
+      >
+
+      <article class="max-w-5xl mx-auto px-4 py-5" data-read-time>
+        <h1 class="text-4xl font-bold font-heading mb-2">
+          The Unbearable Silence: Solitude as the Defining Condition of
+          Modernity in Modernist Drama
+        </h1>
+        <p
+          class="flex justify-between mb-4 text-md text-gray-500 dark:text-gray-400 my-6"
+        >
+          <span
+            ><i class="fa-solid fa-at text-[12px] me-1"></i>Rian Mistry</span
+          >
+          <span
+            ><i class="fa-solid fa-calendar text-[12px] me-1"></i> July
+            2025</span
+          >
+          <span
+            ><i class="fa-solid fa-clock text-[12px] me-1"></i>
+            <span data-read-time-target></span
+          ></span>
+        </p>
+        <p class="text-xl mb-4">
+          Modernist drama, emerging from the seismic shifts of the late
+          nineteenth and early twentieth centuries—industrialization, world
+          wars, the collapse of traditional belief systems, and the rise of
+          existential philosophy—relentlessly probed the human condition under
+          modernity. At its core, as illuminated by seminal playwrights Henrik
+          Ibsen, Bertolt Brecht, Samuel Beckett, and Eugène Ionesco, lies a
+          profound exploration of <strong>solitude</strong>. This essay argues
+          that across diverse dramatic styles—realism, epic theatre, and the
+          absurd—solitude is not an occasional state but the
+          <em>inescapable, defining condition of modern existence</em>,
+          manifesting in psychological, socio-political, and existential forms,
+          and serving as a crucible for truth, alienation, and the ultimate
+          absurdity of human connection.
+        </p>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10 mb-4">
+          I. Ibsen: Solitude as the Crucible of Psychological Truth
+        </h2>
+        <p class="text-xl mb-4">
+          Henrik Ibsen, the progenitor of modern realism, situated solitude
+          within the claustrophobic confines of the bourgeois drawing room. For
+          Ibsen, solitude is primarily <strong>psychological and moral</strong>,
+          a necessary—and often brutal—space for confronting the self. In
+          <em>The Wild Duck</em>, this is crystallized in the conflict between
+          Gregers Werle, who insists Hjalmar Ekdal must “wrestle in solitude”
+          and undertake “thorough self-examination” to shatter his “life-lie,”
+          and Dr. Relling, who argues that such illusions are essential to
+          happiness. The symbolic attic, housing the wounded duck, becomes a
+          hidden world of delusions—a refuge from reality. Hedvig’s tragic
+          suicide underscores the devastating cost when solitude forcibly strips
+          away comforting illusions.
+        </p>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10 mb-4">
+          II. Brecht: Solitude as Socio-Political Alienation
+        </h2>
+        <p class="text-xl mb-4">
+          Bertolt Brecht shifted focus from individual psyche to social
+          structure. In <em>Mother Courage and Her Children</em>, solitude is
+          framed as <strong>socio-political alienation</strong>, a direct result
+          of capitalism and war. Mother Courage’s relentless profiteering
+          estranges her from her own humanity and her children, embodying Marx’s
+          theory of alienation. Brecht’s epic-theatre techniques—episodic scenes
+          and the Verfremdungseffekt—prevent audience immersion, mirroring the
+          characters’ estrangement. Courage’s final image—alone, pulling her
+          cart—symbolizes the brutal loneliness of survival in a profit-driven
+          system on the eve of WWII.
+        </p>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10 mb-4">
+          III. Beckett &amp; Ionesco: Solitude as Existential Absurdity
+        </h2>
+        <p class="text-xl mb-4">
+          In the post-WWII era, existential despair and absurdity defined the
+          drama of Samuel Beckett and Eugène Ionesco. Solitude becomes
+          <strong>existential and ontological</strong>, the fundamental state of
+          being in an indifferent universe.
+        </p>
+
+        <h3 class="text-2xl font-semibold font-heading mt-6 mb-2">
+          Beckett: Waiting for Godot
+        </h3>
+        <p class="text-xl mb-4">
+          In <em>Waiting for Godot</em>, Vladimir and Estragon endure a
+          meaningless, repetitive wait on a barren road, clinging to each other
+          to stave off true solitude. Their circular dialogue (“Nothing to be
+          done”) and minimal setting underscore existential isolation. Pozzo’s
+          descent into blindness and Lucky’s frantic monologue further
+          illustrate the madness born of utter solitude. The perpetual, vain
+          waiting for Godot—a symbol of absent salvation—reflects post-war
+          existential anxiety.
+        </p>
+
+        <h3 class="text-2xl font-semibold font-heading mt-6 mb-2">
+          Ionesco: The Chairs
+        </h3>
+        <p class="text-xl mb-4">
+          In <em>The Chairs</em>, an elderly couple prepares an address for
+          invisible guests, yet they remain “isolated from each other and the
+          rest of the human race.” Their desperate performance collapses into
+          silence when the hired Orator—a deaf-mute—can only produce incoherent
+          sounds. Empty chairs and recorded sounds mock the illusion of company,
+          heightening palpable isolation. Written in 1952 France, the play
+          embodies Camus and Sartre’s existential thought, presenting solitude
+          as the absurd, inescapable structure of human existence.
+        </p>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10 mb-4">
+          IV. Comparative Synthesis
+        </h2>
+        <ul class="list-disc list-inside text-xl mb-4">
+          <li>
+            <strong>Shared Insight:</strong> All four dramatists use isolation
+            to critique modern life—bourgeois hypocrisy (Ibsen), capitalist
+            alienation (Brecht), existential meaninglessness (Beckett &amp;
+            Ionesco).
+          </li>
+          <li>
+            <strong>Divergent Sources:</strong> Ibsen roots solitude in personal
+            conscience; Brecht in socio-economic forces; Beckett &amp; Ionesco
+            in universal existential emptiness.
+          </li>
+          <li>
+            <strong>Varied Consequences:</strong> Ibsen’s solitude yields
+            tragedy; Brecht’s yields moral loss; the Absurdists’ yields dark
+            comedy of futile striving.
+          </li>
+          <li>
+            <strong>Historical Evolution:</strong> Ibsen’s 19th-century realism
+            reflects hidden bourgeois discontent; Brecht’s epic theatre reflects
+            war-torn collective suffering; post-war absurdism embodies fractured
+            alienation.
+          </li>
+        </ul>
+
+        <h2 class="text-3xl font-semibold font-heading mt-10 mb-4">
+          Conclusion
+        </h2>
+        <p class="text-xl">
+          From Ibsen’s claustrophobic drawing rooms to Beckett’s desolate roads
+          and Ionesco’s chair-filled voids, modernist drama portrays solitude as
+          the inescapable hallmark of modern existence. Whether unveiling
+          psychological truth, exposing socio-political alienation, or revealing
+          existential absurdity, solitude emerges as the leitmotif of
+          modernity—an unsettling mirror reflecting the individual’s profound
+          aloneness.
+        </p>
+      </article>
+    </main>
+
+    <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
+      © 2025 Rian Mistry | The Thinking Quill
+    </footer>
+    <script src="/assets/js/script.js"></script>
+    <script>
+      // Reading progress bar
+      window.onscroll = () => {
+        const doc = document.documentElement;
+        const winScroll = doc.scrollTop || document.body.scrollTop;
+        const height = doc.scrollHeight - doc.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
+  </body>
+</html>

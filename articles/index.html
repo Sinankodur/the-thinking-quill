@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Subscribe to The Thinking Quill and receive thoughtful essays in literature, history, and global culture straight to your inbox."
+      content="Read essays and articles on literature, history, and the world beyond the page at The Thinking Quill."
     />
     <meta
       name="keywords"
-      content="subscribe, newsletter, essays, literature, history, culture, The Thinking Quill, global affairs"
+      content="literature, history, essays, articles, culture, modernism, silk road, The Thinking Quill"
     />
-    <meta property="og:title" content="Subscribe | The Thinking Quill" />
-    <meta
-      property="og:description"
-      content="Never miss a thought-provoking essay — subscribe to The Thinking Quill."
-    />
-    <meta property="og:image" content="assets/images/logo.png" />
-    <title>Subscribe | The Thinking Quill</title>
     <meta
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
     />
+    <title>Articles | The Thinking Quill</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -32,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
@@ -53,20 +47,20 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="index.html" class="nav-link text-gray-200 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white"
             >Home</a
           >
           <a
-            href="articles.html"
-            class="nav-link text-gray-300 hover:text-white"
+            href="/articles/"
+            class="nav-link active-link text-gray-300 hover:text-white"
             >Articles</a
           >
-          <a href="about.html" class="nav-link text-gray-300 hover:text-white"
+          <a href="/about/" class="nav-link text-gray-300 hover:text-white"
             >About</a
           >
           <a
-            href="subscribe.html"
-            class="nav-link active-link text-gray-300 hover:text-white"
+            href="/subscribe/"
+            class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -112,49 +106,93 @@
       </div>
     </header>
 
-    <main class="flex-grow max-w-3xl mx-auto py-20 px-6 text-center">
-      <h2 class="text-4xl font-heading font-bold mb-4">
-        Join Our Community of Readers
+    <main class="max-w-6xl mx-auto py-12 px-6 flex-grow">
+      <h2 class="text-4xl font-bold mb-8 text-center font-heading">
+        All Articles
       </h2>
-      <p class="text-lg mb-10 text-gray-700 dark:text-gray-300">
-        Join our mailing list to receive thoughtful essays on literature,
-        history, and global affairs directly in your inbox every two weeks.
-      </p>
-
-      <form
-        action="https://formspree.io/f/movwpdjo"
-        method="post"
-        class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4"
-        id="subscribeForm"
-      >
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Enter your email"
-          class="flex-grow px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-        <button
-          type="submit"
-          class="bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg whitespace-nowrap"
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Article 1 -->
+        <article
+          class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
         >
-          Subscribe
-        </button>
-      </form>
+          <div class="mb-3">
+            <span
+              class="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium"
+              >Literature</span
+            >
+          </div>
+          <h3 class="text-xl font-semibold font-heading mb-2">
+            <a
+              href="./modernism-fragmented-voice/"
+              class="hover:text-accent transition"
+              >Modernism & the Fragmented Voice</a
+            >
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+            Explore how literary modernism broke away from tradition to mirror
+            the fragmented human experience in the early 20th century.
+          </p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">
+            Published: June 2025
+          </p>
+        </article>
 
-      <p id="formMessage" class="text-green-600 mt-4 text-sm hidden">
-        Thank you for subscribing! 🎉
-      </p>
+        <!-- Article 2 -->
+        <article
+          class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
+        >
+          <div class="mb-3">
+            <span
+              class="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium"
+              >Literature</span
+            >
+          </div>
+          <h3 class="text-xl font-semibold font-heading mb-2">
+            <a
+              href="./unbearable-silence-solitude-modernist-drama/"
+              class="hover:text-accent transition"
+              >The Unbearable Silence: Solitude in Modernist Drama</a
+            >
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+            Discover how Ibsen, Brecht, Beckett, and Ionesco portray solitude as
+            the core of modern existence through realism, epic theatre, and
+            absurdism.
+          </p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">
+            Published: July 2025
+          </p>
+        </article>
 
-      <p class="text-sm text-gray-500 mt-6 dark:text-gray-400">
-        You’ll only hear from us twice a month, we respect your privacy. No spam
-        - Unsubscribe any time.
-      </p>
+        <article
+          class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
+        >
+          <div class="mb-3">
+            <span
+              class="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium"
+              >History</span
+            >
+          </div>
+          <h3 class="text-xl font-semibold font-heading mb-2">
+            <a href="#" class="hover:text-accent transition"
+              >The Silk Road: Cultural Crossroads</a
+            >
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+            How ancient trade routes shaped civilizations and facilitated the
+            flow of ideas, goods, and culture across borders.
+          </p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">
+            Published: Coming Soon
+          </p>
+        </article>
+      </div>
     </main>
 
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
-    <script src="assets/js/script.js"></script>
+
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

@@ -9,10 +9,11 @@
     />
     <meta
       name="keywords"
-      content="Modernism, Fragmented Voice, Literature, T.S. Eliot, Virginia Woolf, James Joyce, Narrative, 20th Century, Literary Analysis"
+      content="Modernism, Fragmentation modernsim, Fragmented Voice, Literature, T.S. Eliot, Virginia Woolf, James Joyce, Narrative, 20th Century, Literary Analysis"
     />
     <title>Modernism & the Fragmented Voice</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <meta property="og:type" content="article" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -22,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
@@ -45,24 +46,14 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a
-            href="../index.html"
-            class="nav-link text-gray-200 hover:text-white"
-            >Home</a
-          >
-          <a
-            href="../articles.html"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
+          <a href="/articles/" class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
-          <a
-            href="../about.html"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/about/" class="nav-link text-gray-300 hover:text-white"
             >About</a
           >
-          <a
-            href="../subscribe.html"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -109,18 +100,28 @@
     </header>
 
     <main class="max-w-5xl mx-auto py-16 px-6 flex-grow">
-      <a
-        href="../articles.html"
-        class="inline-block text-accent hover:underline mb-4"
+      <a href="/articles/" class="inline-block text-accent hover:underline mb-4"
         >← Back to Articles</a
       >
 
-      <article>
+      <article data-read-time>
         <h1 class="text-4xl font-bold font-heading mb-2">
           Modernism & the Fragmented Voice
         </h1>
-        <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
-          By Rian Mistry • July 2025
+        <p
+          class="flex justify-between mb-4 text-md text-gray-500 dark:text-gray-400 my-6"
+        >
+          <span
+            ><i class="fa-solid fa-at text-[12px] me-1"></i>Rian Mistry</span
+          >
+          <span
+            ><i class="fa-solid fa-calendar text-[12px] me-1"></i> June
+            2025</span
+          >
+          <span
+            ><i class="fa-solid fa-clock text-[12px] me-1"></i>
+            <span data-read-time-target></span
+          ></span>
         </p>
 
         <p class="text-xl">
@@ -164,7 +165,7 @@
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
-    <script src="../assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
     <script>
       // Reading progress bar
       window.onscroll = () => {

@@ -3,19 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | The Thinking Quill</title>
     <meta
       name="description"
-      content="Read essays and articles on literature, history, and the world beyond the page at The Thinking Quill."
+      content="Learn about the mission behind The Thinking Quill — a literary and historical blog dedicated to insightful essays and thoughtful reflection."
     />
     <meta
       name="keywords"
-      content="literature, history, essays, articles, culture, modernism, silk road, The Thinking Quill"
+      content="literature, history, essays, critical thinking, The Thinking Quill, Rian Mistry, philosophy, culture, education, blog"
     />
+    <meta name="author" content="The Thinking Quill" />
     <meta
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
     />
-    <title>Articles | The Thinking Quill</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="About | The Thinking Quill" />
+    <meta
+      property="og:description"
+      content="The story, mission, and voice behind The Thinking Quill literary blog."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -26,7 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
@@ -47,19 +55,21 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="index.html" class="nav-link text-gray-200 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white"
             >Home</a
           >
           <a
-            href="articles.html"
-            class="nav-link active-link text-gray-300 hover:text-white"
+            href="/articles/"
+            class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
-          <a href="about.html" class="nav-link text-gray-300 hover:text-white"
+          <a
+            href="/about/"
+            class="nav-link active-link text-gray-300 hover:text-white"
             >About</a
           >
           <a
-            href="subscribe.html"
+            href="/subscribe/"
             class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
@@ -106,60 +116,36 @@
       </div>
     </header>
 
-    <main class="max-w-6xl mx-auto py-12 px-6 flex-grow">
-      <h2 class="text-4xl font-bold mb-8 text-center font-heading">
-        All Articles
+    <main class="max-w-4xl mx-auto py-16 px-6 flex-grow">
+      <h2 class="text-4xl font-bold font-heading mb-8 text-center">
+        About the Author
       </h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Article 1 -->
-        <article
-          class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
-        >
-          <div class="mb-3">
-            <span
-              class="bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium"
-              >Literature</span
-            >
-          </div>
-          <h3 class="text-xl font-semibold font-heading mb-2">
-            <a
-              href="posts/modernism-fragmented-voice.html"
-              class="hover:text-accent transition"
-              >Modernism & the Fragmented Voice</a
-            >
-          </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-            Explore how literary modernism broke away from tradition to mirror
-            the fragmented human experience in the early 20th century.
-          </p>
-          <p class="text-xs text-gray-500 dark:text-gray-400">
-            Published: July 2025
-          </p>
-        </article>
-
-        <!-- Article 2 -->
-        <article
-          class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
-        >
-          <div class="mb-3">
-            <span
-              class="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium"
-              >History</span
-            >
-          </div>
-          <h3 class="text-xl font-semibold font-heading mb-2">
-            <a href="#" class="hover:text-accent transition"
-              >The Silk Road: Cultural Crossroads</a
-            >
-          </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-            How ancient trade routes shaped civilizations and facilitated the
-            flow of ideas, goods, and culture across borders.
-          </p>
-          <p class="text-xs text-gray-500 dark:text-gray-400">
-            Published: Coming Soon
-          </p>
-        </article>
+      <div class="text-lg leading-relaxed space-y-6 text-justify">
+        <p>
+          <strong>Rian Mistry</strong> is a literature enthusiast, aspiring
+          educator, and critical thinker with a passion for exploring the
+          intersections between literature, history, and global socio-political
+          affairs. Through <em>The Thinking Quill</em>, Rian aims to create a
+          space where deep reading and intellectual reflection meet accessible,
+          engaging essay writing.
+        </p>
+        <p>
+          With an academic background rooted in English literature and a
+          curiosity for how texts shape and reflect cultural consciousness, Rian
+          writes with an emphasis on historical context, philosophical
+          underpinnings, and the human condition. Whether analyzing modernist
+          fiction, colonial discourse, or contemporary media, each piece is
+          crafted to ignite meaningful thought.
+        </p>
+        <p>
+          Rian is currently pursuing higher education and preparing for a career
+          in teaching and research. This blog serves not only as a creative
+          outlet but also as a platform to connect with like-minded readers who
+          value nuance, critical thinking, and literary exploration.
+        </p>
+        <p class="italic text-center text-accent text-xl pt-4">
+          “To think deeply is to read between the lines.”
+        </p>
       </div>
     </main>
 
@@ -167,6 +153,6 @@
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

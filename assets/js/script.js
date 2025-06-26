@@ -90,3 +90,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const READING_SPEED = 100;
+
+  document.querySelectorAll("article[data-read-time]").forEach((article) => {
+    const text = article.innerText || "";
+    const wordCount = text.trim().split(/\s+/).length;
+    const readTime = Math.max(1, Math.round(wordCount / READING_SPEED));
+
+    const target = article.querySelector("[data-read-time-target]");
+    if (target) {
+      target.textContent = `${readTime} min read`;
+    }
+  });
+});

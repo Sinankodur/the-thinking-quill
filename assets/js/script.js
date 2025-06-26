@@ -18,6 +18,14 @@ tailwind.config = {
   },
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const base = document.getElementById("dynamic-base");
+  if (base) {
+    const isGitHub = window.location.hostname.includes("github.io");
+    base.setAttribute("href", isGitHub ? "/the-thinking-quill/" : "/");
+  }
+});
+
 window.addEventListener("beforeunload", () => {
   const isDark = document.documentElement.classList.contains("dark");
   sessionStorage.setItem("previous-theme", isDark ? "dark" : "light");

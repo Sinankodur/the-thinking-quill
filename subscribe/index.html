@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <base id="dynamic-base" href="/" />
+
+    <title>Subscribe | The Thinking Quill</title>
     <meta
       name="description"
       content="Subscribe to The Thinking Quill and receive thoughtful essays in literature, history, and global culture straight to your inbox."
@@ -11,17 +15,20 @@
       name="keywords"
       content="subscribe, newsletter, essays, literature, history, culture, The Thinking Quill, global affairs"
     />
+    <meta name="author" content="The Thinking Quill" />
+    <meta
+      name="google-site-verification"
+      content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
+    />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Subscribe | The Thinking Quill" />
     <meta
       property="og:description"
       content="Never miss a thought-provoking essay — subscribe to The Thinking Quill."
     />
     <meta property="og:image" content="assets/images/logo.png" />
-    <title>Subscribe | The Thinking Quill</title>
-    <meta
-      name="google-site-verification"
-      content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
-    />
+
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -34,6 +41,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
   >
@@ -53,12 +61,8 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="/the-thinking-quill/" class="nav-link text-gray-200 hover:text-white"
-            >Home</a
-          >
-          <a
-            href="articles/"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
+          <a href="articles/" class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
           <a href="about/" class="nav-link text-gray-300 hover:text-white"
@@ -69,6 +73,7 @@
             class="nav-link active-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
+
           <div class="flex items-center space-x-2 ml-4">
             <label
               for="toggleDark"
@@ -148,13 +153,15 @@
 
       <p class="text-sm text-gray-500 mt-6 dark:text-gray-400">
         You’ll only hear from us twice a month, we respect your privacy.
-        <br> No spam - Unsubscribe any time.
+        <br />
+        No spam - Unsubscribe any time.
       </p>
     </main>
 
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>

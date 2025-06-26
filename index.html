@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="the-thinking-quill/" />
+    <base id="dynamic-base" href="/" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,6 @@
     />
     <meta name="author" content="The Thinking Quill" />
     <meta name="robots" content="index, follow" />
-
     <meta
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
@@ -41,21 +40,16 @@
       content="https://sinankodur.github.io/the-thinking-quill/"
     />
 
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
-
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Google Analytics -->
@@ -84,7 +78,7 @@
           <div class="mr-4 bg-accent p-2 rounded-lg">
             <i class="fas fa-feather-alt text-xl"></i>
           </div>
-          <div class="logo-section">
+          <div>
             <h1 class="text-3xl font-bold font-heading">The Thinking Quill</h1>
             <p class="italic text-gray-300 text-sm mt-1">
               Essays in Literature, History & the World Beyond the Page
@@ -106,6 +100,7 @@
           <a href="subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
+
           <div class="flex items-center space-x-2 ml-4">
             <label
               for="toggleDark"
@@ -205,8 +200,9 @@
               <a
                 href="articles/modernism-fragmented-voice/"
                 class="hover:text-accent transition-colors"
-                >Modernism & the Fragmented Voice</a
               >
+                Modernism & the Fragmented Voice
+              </a>
             </h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
               A reflection on the disruption of linearity in early 20th-century
@@ -215,9 +211,8 @@
             <div
               class="flex items-center text-sm text-gray-500 dark:text-gray-400"
             >
-              <span>June 20, 2025</span>
-              <span class="mx-2">•</span>
-              <span>2 min read</span>
+              <span>June 20, 2025</span><span class="mx-2">•</span
+              ><span>2 min read</span>
             </div>
           </article>
 
@@ -248,9 +243,8 @@
             <div
               class="flex items-center text-sm text-gray-500 dark:text-gray-400"
             >
-              <span>July 5, 2025</span>
-              <span class="mx-2">•</span>
-              <span>9 min read</span>
+              <span>July 5, 2025</span><span class="mx-2">•</span
+              ><span>9 min read</span>
             </div>
           </article>
 
@@ -277,13 +271,13 @@
             <div
               class="flex items-center text-sm text-gray-500 dark:text-gray-400"
             >
-              <span>Coming soon</span>
-              <span class="mx-2">•</span>
-              <span>5 min read</span>
+              <span>Coming soon</span><span class="mx-2">•</span
+              ><span>5 min read</span>
             </div>
           </article>
         </div>
       </section>
+
       <div class="mt-10 text-center">
         <a
           href="articles/"
@@ -297,6 +291,7 @@
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <base id="dynamic-base" href="/" />
+
+    <title>Articles | The Thinking Quill</title>
     <meta
       name="description"
       content="Read essays and articles on literature, history, and the world beyond the page at The Thinking Quill."
@@ -11,11 +15,20 @@
       name="keywords"
       content="literature, history, essays, articles, culture, modernism, silk road, The Thinking Quill"
     />
+    <meta name="author" content="The Thinking Quill" />
     <meta
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
     />
-    <title>Articles | The Thinking Quill</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Articles | The Thinking Quill" />
+    <meta
+      property="og:description"
+      content="All essays and articles on literature, history, culture, and beyond by Rian Mistry at The Thinking Quill."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -28,9 +41,11 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
   >
+    <!-- Header -->
     <header class="bg-primary text-white py-5 px-4 shadow-md">
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
@@ -47,9 +62,7 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="/the-thinking-quill/" class="nav-link text-gray-200 hover:text-white"
-            >Home</a
-          >
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
           <a
             href="articles/"
             class="nav-link active-link text-gray-300 hover:text-white"
@@ -58,9 +71,7 @@
           <a href="about/" class="nav-link text-gray-300 hover:text-white"
             >About</a
           >
-          <a
-            href="subscribe/"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -74,6 +85,7 @@
               ></div>
             </label>
             <span id="modeIcon" class="w-5 h-5 text-gray-100 dark:text-white">
+              <!-- Icons -->
               <svg
                 id="sunIcon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +118,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main class="max-w-6xl mx-auto py-12 px-6 flex-grow">
       <h2 class="text-4xl font-bold mb-8 text-center font-heading">
         All Articles
@@ -123,7 +136,7 @@
           </div>
           <h3 class="text-xl font-semibold font-heading mb-2">
             <a
-              href="./modernism-fragmented-voice/"
+              href="articles/modernism-fragmented-voice/"
               class="hover:text-accent transition"
               >Modernism & the Fragmented Voice</a
             >
@@ -149,7 +162,7 @@
           </div>
           <h3 class="text-xl font-semibold font-heading mb-2">
             <a
-              href="./unbearable-silence-solitude-modernist-drama/"
+              href="articles/unbearable-silence-solitude-modernist-drama/"
               class="hover:text-accent transition"
               >The Unbearable Silence: Solitude in Modernist Drama</a
             >
@@ -164,6 +177,7 @@
           </p>
         </article>
 
+        <!-- Article 3 -->
         <article
           class="article-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform"
         >
@@ -189,10 +203,12 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
 
+    <!-- Script -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>

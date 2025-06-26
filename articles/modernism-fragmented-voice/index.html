@@ -3,15 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <base id="dynamic-base" href="/" />
+
+    <title>Modernism & the Fragmented Voice | The Thinking Quill</title>
     <meta
       name="description"
       content="Explore how modernist literature uses the fragmented voice to reflect the complexities of identity, reality, and meaning in the 20th century."
     />
     <meta
       name="keywords"
-      content="Modernism, Fragmentation modernsim, Fragmented Voice, Literature, T.S. Eliot, Virginia Woolf, James Joyce, Narrative, 20th Century, Literary Analysis"
+      content="Modernism, Fragmentation modernism, Fragmented Voice, Literature, T.S. Eliot, Virginia Woolf, James Joyce, Narrative, 20th Century, Literary Analysis"
     />
-    <title>Modernism & the Fragmented Voice</title>
+    <meta
+      property="og:title"
+      content="Modernism & the Fragmented Voice | The Thinking Quill"
+    />
+    <meta
+      property="og:description"
+      content="How the fragmented voice became the central narrative innovation of modernist literature."
+    />
     <meta property="og:type" content="article" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,11 +36,13 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
   >
     <div id="progressBar" class="progress-bar w-0"></div>
 
+    <!-- Header -->
     <header class="bg-primary text-white py-5 px-4 shadow-md">
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
@@ -46,7 +59,7 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="/the-thinking-quill/" class="nav-link text-gray-200 hover:text-white">Home</a>
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
           <a href="articles/" class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
@@ -56,6 +69,7 @@
           <a href="subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
+
           <div class="flex items-center space-x-2 ml-4">
             <label
               for="toggleDark"
@@ -99,6 +113,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main class="max-w-5xl mx-auto py-16 px-6 flex-grow">
       <a href="articles/" class="inline-block text-accent hover:underline mb-4"
         >← Back to Articles</a
@@ -162,9 +177,11 @@
       </article>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-primary text-gray-400 text-sm py-6 text-center">
       © 2025 Rian Mistry | The Thinking Quill
     </footer>
+
     <script src="assets/js/script.js"></script>
     <script>
       // Reading progress bar

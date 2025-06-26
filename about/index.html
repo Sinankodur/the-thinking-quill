@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base id="dynamic-base" href="/" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | The Thinking Quill</title>
@@ -17,6 +19,7 @@
       name="google-site-verification"
       content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
     />
+
     <!-- Open Graph -->
     <meta property="og:title" content="About | The Thinking Quill" />
     <meta
@@ -25,6 +28,8 @@
     />
     <meta property="og:image" content="assets/images/logo.png" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+
+    <!-- Tailwind + Fonts + Style -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -36,6 +41,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-parchment text-ink font-body dark:bg-darkParchment dark:text-gray-200 transition-colors"
   >
@@ -55,12 +61,8 @@
           </div>
         </div>
         <nav class="mt-4 md:mt-0 flex items-center space-x-8">
-          <a href="/the-thinking-quill/" class="nav-link text-gray-200 hover:text-white"
-            >Home</a
-          >
-          <a
-            href="articles/"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="/" class="nav-link text-gray-200 hover:text-white">Home</a>
+          <a href="articles/" class="nav-link text-gray-300 hover:text-white"
             >Articles</a
           >
           <a
@@ -68,9 +70,7 @@
             class="nav-link active-link text-gray-300 hover:text-white"
             >About</a
           >
-          <a
-            href="subscribe/"
-            class="nav-link text-gray-300 hover:text-white"
+          <a href="subscribe/" class="nav-link text-gray-300 hover:text-white"
             >Subscribe</a
           >
           <div class="flex items-center space-x-2 ml-4">
@@ -133,9 +133,7 @@
           With an academic background rooted in English literature and a
           curiosity for how texts shape and reflect cultural consciousness, Rian
           writes with an emphasis on historical context, philosophical
-          underpinnings, and the human condition. Whether analyzing modernist
-          fiction, colonial discourse, or contemporary media, each piece is
-          crafted to ignite meaningful thought.
+          underpinnings, and the human condition.
         </p>
         <p>
           Rian is currently pursuing higher education and preparing for a career

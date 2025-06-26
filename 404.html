@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base id="dynamic-base" href="/" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | The Thinking Quill</title>
     <meta
       name="description"
       content="404 error page for The Thinking Quill. The page you are looking for does not exist."
@@ -11,7 +14,9 @@
       name="keywords"
       content="404, error, page not found, The Thinking Quill, missing page"
     />
-    <title>Page Not Found | The Thinking Quill</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="author" content="Rian Mistry" />
+
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -35,6 +40,7 @@
       }
     </script>
   </head>
+
   <body
     class="min-h-screen flex flex-col justify-center items-center text-center bg-parchment text-ink dark:bg-darkParchment dark:text-gray-200 font-body px-4"
   >
@@ -49,9 +55,8 @@
         The page you're looking for doesn't exist. It may have been moved,
         deleted, or perhaps it never existed at all.
       </p>
-
       <a
-        href="/the-thinking-quill/"
+        href="/"
         class="inline-block bg-accent hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md"
       >
         Return Home

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <base id="dynamic-base" href="/" />
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Articles | The Thinking Quill</title>
     <meta
       name="description"
@@ -15,22 +14,43 @@
       name="keywords"
       content="literature, history, essays, articles, culture, modernism, silk road, The Thinking Quill"
     />
-    <meta name="author" content="The Thinking Quill" />
-    <meta
-      name="google-site-verification"
-      content="07N5_Oxa9ZKXug702DpsZqCH9Mk1gRf5QeKYGbRDlIw"
-    />
-
-    <!-- Open Graph -->
+    <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Articles | The Thinking Quill" />
     <meta
       property="og:description"
       content="All essays and articles on literature, history, culture, and beyond by Rian Mistry at The Thinking Quill."
     />
-    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:image" content="../assets/images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sinankodur.github.io/the-thinking-quill/articles/"
+    />
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon" />
 
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3639",
+              accent: "#5F7A71",
+              parchment: "#F8F5F0",
+              darkParchment: "#1C1A16",
+              secondary: "#8B5D33",
+              subtle: "#D1C6AD",
+            },
+            fontFamily: {
+              heading: ["Playfair Display", "serif"],
+              body: ["Crimson Text", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
